@@ -1,0 +1,25 @@
+@mixin transition($time: 0.25s) {
+  -webkit-transition: $time ease-in;
+  -moz-transition: $time ease-in;
+  -o-transition: $time ease-in;
+  transition: $time ease-in;
+}
+
+@mixin abs-cnr {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+@mixin dot($color) {
+  position: absolute;
+  left: -20px;
+  top: 2px;
+  background-color: $color;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+}
